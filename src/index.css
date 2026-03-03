@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-pantry-cream: #FDFCF8;
+  --color-pantry-gold: #C5A059;
+  --color-pantry-ink: #1A1A1A;
+  --color-pantry-sage: #5A5A40;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-pantry-cream text-pantry-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-black/5 shadow-sm;
+}
+
+.nav-link {
+  @apply text-sm uppercase tracking-widest font-medium hover:text-pantry-gold transition-colors duration-300;
+}
+
+.product-image-container {
+  @apply relative overflow-hidden rounded-2xl aspect-[4/5];
+}
+
+.product-image {
+  @apply object-cover w-full h-full transition-transform duration-700 hover:scale-105;
+}
