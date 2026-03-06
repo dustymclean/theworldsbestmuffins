@@ -215,7 +215,7 @@ function AgeGate({ onVerify }: { onVerify: () => void }) {
           <div className="space-y-4">
             <h2 className="text-4xl font-serif leading-tight">Age Verification Required</h2>
             <p className="text-pantry-ink/60 leading-relaxed">
-              You must be at least 21 years of age to enter The World's Best Muffins. By entering, you confirm you are of legal age.
+              You must be at least 21 years of age to enter The Whole Baked Machine. By entering, you confirm you are of legal age.
             </p>
           </div>
 
@@ -521,7 +521,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-8">
             <div className="font-serif text-2xl font-bold tracking-tighter select-none">
-              WBM<span 
+              TWBM<span 
                 onClick={handleLogoClick}
                 className="text-pantry-gold cursor-default active:scale-125 transition-transform inline-block"
               >.</span>
@@ -1100,7 +1100,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
             <div className="md:col-span-2">
               <a href="#" className="font-serif text-3xl font-bold tracking-tighter mb-6 block">
-                The World's Best Muffins<span className="text-pantry-gold">.</span>
+                The Whole Baked Machine<span className="text-pantry-gold">.</span>
               </a>
               <p className="text-pantry-ink/60 max-w-sm leading-relaxed">
                 Elevating the art of the muffin through artisanal baking and premium infusions. Join us in our pursuit of the perfect bite.
@@ -1126,7 +1126,7 @@ export default function App() {
           
           <div className="flex flex-col md:flex-row items-center justify-between pt-12 border-t border-black/5 gap-6">
             <p className="text-xs text-pantry-ink/40 uppercase tracking-widest">
-              &copy; {new Date().getFullYear()} The World's Best Muffins. All rights reserved.
+              &copy; {new Date().getFullYear()} The Whole Baked Machine. All rights reserved.
             </p>
             <p className="text-sm font-medium">
               Powered by <a href="https://pixies-pantry.com" target="_blank" rel="noopener noreferrer" className="text-pantry-gold hover:underline underline-offset-4">Pixies Pantry</a>
@@ -1154,7 +1154,7 @@ function ProductPage({ product, onBack, onAddToCart }: { product: Product, onBac
             <ArrowRight size={16} className="rotate-180" /> Back to Collection
           </button>
           <a href="#" className="font-serif text-2xl font-bold tracking-tighter">
-            WBM<span className="text-pantry-gold">.</span>
+            TWBM<span className="text-pantry-gold">.</span>
           </a>
           <div className="w-24" /> {/* Spacer */}
         </div>
@@ -1700,7 +1700,7 @@ function AdminDashboard({
       {/* Mobile Header */}
       <div className="lg:hidden bg-pantry-ink text-white p-4 flex items-center justify-between sticky top-0 z-50">
         <div className="font-serif text-xl font-bold tracking-tighter">
-          WBM<span className="text-pantry-gold">.</span>
+          TWBM<span className="text-pantry-gold">.</span>
         </div>
         <button 
           onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
@@ -1716,7 +1716,7 @@ function AdminDashboard({
         ${mobileSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="font-serif text-2xl font-bold tracking-tighter mb-12">
-          WBM<span className="text-pantry-gold">.</span>
+          TWBM<span className="text-pantry-gold">.</span>
           <span className="block text-[10px] uppercase tracking-[0.4em] font-sans font-bold text-white/40 mt-1">Admin Panel</span>
         </div>
         
